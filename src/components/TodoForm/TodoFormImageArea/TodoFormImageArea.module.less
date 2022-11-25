@@ -1,0 +1,49 @@
+.inputArea{
+  margin: 15px 0;
+  display: grid;
+  place-items: center;
+  border: 2px dashed #00dc82;
+  color: white;
+  padding: 40px 40px;
+  position: relative;
+  text-align: center;
+
+  &.active{
+    border-radius: 6px;
+  }
+  label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    bottom: 0;
+  }
+}
+.imageArea{
+  width: 100%;
+  cursor: pointer;
+
+  button{
+    background: none;
+    margin-top: 5px;
+    border: none;
+    cursor: pointer;
+    color: white;
+  }
+
+  img{
+    max-width: 30%;
+    margin-top: 10px;
+    border-radius: 6px;
+    display: block;
+    &:hover{
+      opacity: .2;
+    }
+    @media screen and (max-width: 530px){
+      &{
+        max-width: 70%;
+      }
+    }
+  }
+}

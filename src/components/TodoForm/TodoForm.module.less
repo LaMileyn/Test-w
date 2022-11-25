@@ -1,0 +1,59 @@
+@import "./../../styles/variables";
+
+.form{
+  padding: 20px;
+  background: @gray;
+  border-radius: 6px;
+
+
+
+  &__field{
+    margin-bottom: 10px;
+    label{
+      display: block;
+      color: @green;
+      margin-top: 10px;
+      &:first-child{
+        margin-top: 0;
+      }
+    }
+    input{
+      width: 100%;
+      color: @white;
+      border: none;
+      border-bottom: 1px solid @white;
+      padding: 5px 0;
+      background: none;
+    }
+  }
+
+  &__error{
+    color: #e76565;
+    padding: 10px 0;
+  }
+  & > button{
+    margin-top: 40px;
+    padding: 8px 35px;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+  &__createBtn{
+    background: @white;
+    border: 1px solid @white;
+
+    &:hover{
+      background: @gray;
+      color: @green;
+    }
+  }
+  &__cancelBtn{
+    background: none;
+    border: 1px solid #e76565;
+    margin-left: 15px;
+    color: @white;
+    &:hover{
+      background: #e76565;
+      color: @gray;
+    }
+  }
+}

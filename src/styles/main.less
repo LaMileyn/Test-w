@@ -1,0 +1,41 @@
+@import "./variables";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  list-style-type: none;
+}
+
+body {
+  background: @dark;
+  font-family: @font-main;
+}
+
+button, input {
+  font-family: "sans-serif";
+}
+
+input[type="date"] {
+  cursor: pointer;
+}
+
+.App {
+  min-height: 100vh;
+  max-width: 80%;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 40px 0;
+
+  @media screen and (max-width: 600px){
+    &{
+      max-width: 100%;
+      padding: 20px;
+    }
+  }
+}
+
+h1 {
+  color: @white;
+}
